@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux';
 import { deleteContact } from '../redux/contactsSlice';
 import toast from 'izitoast';
-
+import css from './Contact.module.css';
 
 const Contact = ({ contact }) => {
     const dispatch = useDispatch();
@@ -15,10 +15,11 @@ const Contact = ({ contact }) => {
             position: 'topRight',
         });
     };
-    if (!contact || !contact.name) return null;
-
+    if (!contact) {
+        return null;
+    }
     return (
-        <div>
+        <div className={css.contact}>
             <span>{contact.name}: {contact.number}</span>
             <button onClick={handleDelete}>Delete</button>
         </div>

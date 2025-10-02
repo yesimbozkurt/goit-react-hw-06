@@ -5,6 +5,7 @@ import { nanoid } from 'nanoid';
 import { Formik, Form, Field } from 'formik';
 import 'izitoast/dist/css/iziToast.min.css';
 import toast from 'izitoast';
+import css from './ContactsForm.module.css';
 
 
 
@@ -29,9 +30,9 @@ const ContactsForm = () => {
         actions.resetForm();
     }
     return (
-        <div>
+        <div className={css.formContainer}>
             <Formik initialValues={initialValues} onSubmit={handleSubmit}>
-                <Form>
+                <Form className={css.form}>
                     <Field name="name" placeholder="Name" />
                     <Field name="number" placeholder="Number" />
                     <button type="submit">Add Contact</button>

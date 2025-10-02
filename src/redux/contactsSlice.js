@@ -23,11 +23,11 @@ const contactsSlice = createSlice({
 });
 
 export const selectContacts = (state) => {
-    const search = state.filters.search.toLowerCase();
+    const search = state.filters.search;
     if (search) {
         return state.contacts.items.filter(
             (contact) =>
-                contact.name.toLowerCase().includes(search) ||
+                contact.name.includes(search) ||
                 contact.number.includes(state.filters.search)
         );
     }

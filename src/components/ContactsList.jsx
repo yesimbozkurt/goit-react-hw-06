@@ -13,9 +13,13 @@ const ContactsList = () => {
         );
     return (
         <div className={css.contactsList}>
-            {filteredContacts.map(contact => (
-                <Contact key={contact.id} contact={contact} />
-            ))}
+            <ul className={css.list}>
+                {filteredContacts.map(contact => (
+                    <li key={contact.id}>
+                        <Contact contact={contact} />
+                    </li>
+                ))}
+            </ul>
         </div>
     )
 }
