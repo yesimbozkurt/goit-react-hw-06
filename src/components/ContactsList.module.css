@@ -2,11 +2,14 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    max-width: 400px;
 }
 
 .list {
     padding: 0;
     margin: 0;
     list-style: none;
+}
+
+.listItem {
+    width: 400px;
 }

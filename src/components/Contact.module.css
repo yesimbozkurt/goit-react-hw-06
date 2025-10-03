@@ -11,3 +11,20 @@
     cursor: pointer;
     margin-bottom: 10px;
 }
+
+.contactName {
+    font-weight: bold;
+}
+
+.button {
+    background-color: #ea6161;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #b42f2a;
+}

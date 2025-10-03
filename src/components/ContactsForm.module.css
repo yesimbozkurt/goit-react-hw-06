@@ -1,9 +1,10 @@
 .formContainer {
     margin-bottom: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #9d9b9b;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    background-color: rgb(128, 128, 128, 0.5);
+    width: 300px;
 }
 
 .form {
@@ -15,7 +16,7 @@
 .form input {
     padding: 8px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #9d9b9b;
     border-radius: 4px;
 }
 
