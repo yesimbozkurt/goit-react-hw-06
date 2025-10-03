@@ -9,7 +9,7 @@ import contactsReducer from './contactsSlice'
 const contactsPersistConfig = {
     key: "contacts",
     storage,
-    whitelist: ["contacts"],
+    whitelist: ["items"],
 };
 
 // const rootReducer = combineReducers({

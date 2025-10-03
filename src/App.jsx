@@ -8,10 +8,16 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Phonebook</h1>
-      <SearchBox />
-      <Form />
-      <ContactsList />
+      <h1 className='title'>Phonebook</h1>
+      <div className='main-container'>
+        <div className='form-container'>
+          <Form />
+        </div>
+        <div className='contacts-container'>
+          <SearchBox />
+          <ContactsList />
+        </div>
+      </div>
     </div>
   )
 }

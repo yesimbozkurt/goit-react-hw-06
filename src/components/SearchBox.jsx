@@ -7,7 +7,7 @@ const SearchBox = () => {
     const filter = useSelector(selectNameFilter);
 
     const handleChange = (e) => {
-        dispatch(changeFilter(e.target.value));
+        dispatch(changeFilter(e.target.value.toLowerCase()));
     };
     return (
         <input

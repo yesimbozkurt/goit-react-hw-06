@@ -22,13 +22,20 @@ const contactsSlice = createSlice({
     },
 });
 
+// export const selectContacts = (state) => {
+//     const search = state.filters.search;
+//     if (search) {
+//         return state.contacts.items.filter(
+//             (contact) =>
+//                 contact.name.toLowerCase().includes(search)
+//         );
+//     }
+//     return state.contacts.items;
+// };
 export const selectContacts = (state) => {
-    const search = state.filters.search;
-    if (search) {
-        return state.contacts.items.filter(
-            (contact) =>
-                contact.name.includes(search) ||
-                contact.number.includes(state.filters.search)
+    if (state.filters.search) {
+        return state.contacts.items.filter((contact) =>
+            contact.name.toLowerCase().includes(state.filters.search.toLowerCase())
         );
     }
     return state.contacts.items;

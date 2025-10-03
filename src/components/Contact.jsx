@@ -20,6 +20,7 @@ const Contact = ({ contact }) => {
     }
     return (
         <div className={css.contact}>
+            {/* // react icon ekle */}
             <span>{contact.name}: {contact.number}</span>
             <button onClick={handleDelete}>Delete</button>
         </div>
